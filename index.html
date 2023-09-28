@@ -1,1 +1,86 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Flexbox 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        width: 370px;
+        margin: 30px auto;
+        padding: 10px;
+      }
+      .right-section {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+      }
+      .link-box {
+        display: flex;
+        margin-top: 10px;
+        border-radius: 16px;
+        border: 1px solid lightgray;
+      }
+      .profile-pic {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50px;
+      }
+      .right-title {
+        font-weight: bold;
+      }
+      .user-tag {
+        font-weight: normal;
+        color: gray;
+      }
+      .right-desc {
+        line-height: 20px;
+        margin-top: 8px;
+      }
+      .link-box-pic {
+        width: 120px;
+        height: 100%;
+        background: lightgray;
+        border-radius: 15px 0 0 15px;
+      }
+      .link-box-desc {
+        padding: 10px;
+        font-size: 14px;
+      }
+      .link-title {
+        color: gray;
+      }
+      .link-desc {
+        line-height: 20px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-section">
+        <img class="profile-pic" src="img_car.jpg" />
+      </div>
+      <div class="right-section">
+        <p class="right-title">supersimple.dev <span class="user-tag">@SuperSimpleDev</span></p>
+        <p class="right-desc">What is backend development? A complete overview. New video is up!</p>
+        <div class="link-box">
+          <div class="link-box-pic"></div>
+          <div class="link-box-desc">
+            <p class="link-title">youtube.com</p>
+            <p class="link-desc">Backend web development - a complete overview (2021)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
